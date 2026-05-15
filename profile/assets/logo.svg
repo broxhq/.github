@@ -1,0 +1,16 @@
+<svg width="320" height="80" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="brox">
+  <title>brox</title>
+  <!-- icon mark -->
+  <g transform="translate(0, 8) scale(0.25)">
+    <rect width="256" height="256" rx="48" fill="#0A0A0A"/>
+    <rect x="60" y="48" width="30" height="160" rx="3" fill="#FFFFFF"/>
+    <circle cx="142" cy="154" r="39" fill="none" stroke="#FFFFFF" stroke-width="30"/>
+  </g>
+  <!-- wordmark -->
+  <text x="80" y="58"
+        font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', system-ui, sans-serif"
+        font-size="56"
+        font-weight="900"
+        letter-spacing="-2"
+        fill="#0A0A0A">brox</text>
+</svg>

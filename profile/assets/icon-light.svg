@@ -1,0 +1,6 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Brox">
+  <title>brox</title>
+  <rect width="256" height="256" rx="48" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="2"/>
+  <rect x="60" y="48" width="30" height="160" rx="3" fill="#0A0A0A"/>
+  <circle cx="142" cy="154" r="39" fill="none" stroke="#0A0A0A" stroke-width="30"/>
+</svg>
