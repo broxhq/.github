@@ -68,12 +68,12 @@ You publish under your own GitHub username as the scope: if you're `alice`, `@al
 - ⭐ Star the repos you use — it helps others discover Brox
 - 🛠 Build a skill and `brox publish` it
 - 🐛 Report bugs in the relevant repo
-- 🌐 Website: [brox.dev](https://brox.dev)
+- 🌐 Website: [brox.sh](https://brox.sh)
 
 ---
 
 <div align="center">
 
-[brox.dev](https://brox.dev) · [@broxhq on npm](https://www.npmjs.com/org/broxhq) · MIT licensed
+[brox.sh](https://brox.sh) · [@broxhq on npm](https://www.npmjs.com/org/broxhq) · MIT licensed
 
 </div>
