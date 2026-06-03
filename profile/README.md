@@ -1,18 +1,9 @@
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/broxhq/.github/main/profile/assets/logo-dark.svg">
-  <img alt="qpilot" src="https://raw.githubusercontent.com/broxhq/.github/main/profile/assets/logo.svg" width="80">
-</picture>
-
 # qpilot
 
 **AI agent that runs your manual test cases in a real browser**
 
 [![npm](https://img.shields.io/npm/v/qpilot?color=6366f1)](https://www.npmjs.com/package/qpilot)
 [![license](https://img.shields.io/badge/license-MIT-71717a)](LICENSE)
-
-</div>
 
 ---
 
@@ -33,12 +24,8 @@ No code. No config. No Selenium.
 | | |
 |---|---|
 | [**qpilot**](https://github.com/broxhq/qpilot) | CLI source code |
-| [**web**](https://github.com/broxhq/web) | Landing page |
+| [**web**](https://github.com/broxhq/web) | Landing page — brox.sh |
 
 ---
 
-<div align="center">
-
 [brox.sh](https://brox.sh) · MIT
-
-</div>
