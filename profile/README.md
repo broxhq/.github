@@ -5,75 +5,61 @@
   <img alt="brox" src="https://raw.githubusercontent.com/broxhq/.github/main/profile/assets/logo.svg" width="320">
 </picture>
 
-### The package manager for AI agent skills.
-
 [![npm version](https://img.shields.io/npm/v/@broxhq/cli?label=%40broxhq%2Fcli&color=84cc16)](https://www.npmjs.com/package/@broxhq/cli)
+[![qpilot](https://img.shields.io/npm/v/qpilot?label=qpilot&color=6366f1)](https://www.npmjs.com/package/qpilot)
 [![license](https://img.shields.io/npm/l/@broxhq/cli?color=71717a)](https://github.com/broxhq/cli/blob/main/LICENSE)
-[![registry](https://img.shields.io/badge/registry-broxhq%2Fregistry-0a0a0a)](https://github.com/broxhq/registry)
 
 </div>
 
 ---
 
-## What is Brox?
+## 🛩 qpilot
 
-Brox is a package manager for **AI agent skills** — self-contained bundles of instructions, scripts, and references that extend what your agent can do.
+Paste a manual test case. An AI agent opens Chrome and executes each step — live `pass / fail / warn` per step. If it hits a captcha or OTP, it pauses and asks you directly.
 
-Think of it as `npm` for Claude, Cursor, Cline, Continue, and any agent that follows the [Agent Skills](https://github.com/broxhq/spec) convention.
+```bash
+npx qpilot
+```
+
+No code. No config. No Selenium. Just paste and run.
+
+→ **[npmjs.com/package/qpilot](https://www.npmjs.com/package/qpilot)**
+
+---
+
+## Brox — package manager for AI agent skills
+
+Self-contained bundles that extend what your agent can do. Think `npm` for Claude, Cursor, Cline, and Continue.
 
 ```bash
 npm install -g @broxhq/cli
 
-brox search pdf                          # find a skill
-brox install @brox/pdf-extractor         # install it
-brox list                                # see what's installed
-brox init                                # create your own
+brox install @brox/pdf-extractor   # extract text from PDFs
+brox install @brox/web-fetch       # fetch URLs as clean text
+brox install @brox/git-context     # repo awareness for agents
+brox install @brox/sqlite-query    # query .db files safely
 ```
 
-Skills land in `./.claude/skills/` (per-project) or `~/.claude/skills/` (global) — the convention recognized by all major agents.
+Skills land in `.claude/skills/` — recognized by all major agents.
 
-## Featured skills
+Browse all → [broxhq/registry](https://github.com/broxhq/registry)
 
-| Skill | What it does |
-|-------|--------------|
-| [`@brox/pdf-extractor`](https://github.com/broxhq/examples/tree/main/pdf-extractor) | Extract text from PDFs. Pure Python (only needs `pypdf`). |
-| [`@brox/web-fetch`](https://github.com/broxhq/examples/tree/main/web-fetch) | Fetch a URL and return clean readable text. Python stdlib only. |
-| [`@brox/git-context`](https://github.com/broxhq/examples/tree/main/git-context) | Give the agent fast situational awareness of any repo. |
-| [`@brox/sqlite-query`](https://github.com/broxhq/examples/tree/main/sqlite-query) | Inspect schema and run SQL queries against `.db` files safely. |
-
-Browse the full list at [broxhq/registry](https://github.com/broxhq/registry).
+---
 
 ## Repositories
 
 | | |
 |---|---|
-| [**cli**](https://github.com/broxhq/cli) | `@broxhq/cli` — the package manager itself |
-| [**registry**](https://github.com/broxhq/registry) | Public index of every skill; PRs validated and auto-merged |
-| [**spec**](https://github.com/broxhq/spec) | The skill manifest format and JSON schema |
+| [**qpilot**](https://github.com/broxhq/qpilot) | AI agent that runs manual test cases in a real browser |
+| [**cli**](https://github.com/broxhq/cli) | `@broxhq/cli` — the Brox package manager |
+| [**registry**](https://github.com/broxhq/registry) | Public index of every skill |
+| [**spec**](https://github.com/broxhq/spec) | The skill manifest format |
 | [**examples**](https://github.com/broxhq/examples) | Reference skills, ready to install |
-
-## Publishing your own skill
-
-```bash
-brox init           # scaffold a new skill
-# edit SKILL.md and add scripts, then commit to your GitHub repo
-brox login          # authenticate with GitHub (Device Flow)
-brox publish        # tag, push, fork registry, open PR
-```
-
-You publish under your own GitHub username as the scope: if you're `alice`, `@alice/*` is yours. CI validates the PR against [these checks](https://github.com/broxhq/registry/blob/main/scripts/validate.py) and auto-merges on success — usually in under a minute.
-
-## Get involved
-
-- ⭐ Star the repos you use — it helps others discover Brox
-- 🛠 Build a skill and `brox publish` it
-- 🐛 Report bugs in the relevant repo
-- 🌐 Website: [brox.sh](https://brox.sh)
 
 ---
 
 <div align="center">
 
-[brox.sh](https://brox.sh) · [@broxhq on npm](https://www.npmjs.com/org/broxhq) · MIT licensed
+[brox.sh](https://brox.sh) · [@broxhq on npm](https://www.npmjs.com/org/broxhq) · MIT
 
 </div>
